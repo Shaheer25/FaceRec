@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/face",methods=["POST"])
 def faceRec():
     try:
-        result = DeepFace.verify(img1_path = "img1.jpg", img2_path = "img2.jpg")
+        result = DeepFace.verify(img1_path ="views/img1.jpg", img2_path ="views/img2.jpg")
         result_str = "Same Person" if result else "Different Person"
         return jsonify({"result":result_str}),200
     except Exception as ex:
