@@ -17,5 +17,3 @@ def faceRec():
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
 
-
-    result_str = "Same Person" if result else "Different Person"
